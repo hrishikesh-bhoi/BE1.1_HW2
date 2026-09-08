@@ -11,16 +11,16 @@ const carSchema = new mongoose.Schema({
     },
     year: Number,
     mileage: Number,
-    fuelType: [{
+    fuelType: {
         type: String,
         enum: ["Gasoline", "Diesel", "Electric", "Hybrid"],
     },
-],
-transmission: [{
+
+transmission: {
     type: String,
     enum: ["Automatic", "Manual"],
 },
-],
+
 bodyStyle: [String],
 color: String,
 isCertifiedPreOwned: {

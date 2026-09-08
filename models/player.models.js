@@ -12,14 +12,14 @@ const playerSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     age: Number,
-    gender: [String],
+    gender: String,
     country: String,
     isActive: {
         type: Boolean,
         default: true,
     },
     gamesPlayed: Number,
-    level: [String],
+    level: String,
     preferredGame: String,
     
 }, 
